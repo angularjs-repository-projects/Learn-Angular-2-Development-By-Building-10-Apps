@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Details </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="details">
+  <ion-card>
+    <ion-card-header>
+      <strong>
+        {{work.title}}
+      </strong>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>
+        {{work.type}}
+      </strong>
+      </p>
+      <hr>
+      {{work.note}}
+      <br><br><br>
+      <button (click)="deleteWorkout(work._id.$oid)" danger block>Delete Workout</button>
+
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
